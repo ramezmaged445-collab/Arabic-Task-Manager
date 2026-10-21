@@ -1,0 +1,41 @@
+# متجاهَل بواسطة Git
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# الاختبارات والأدوات
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# PyInstaller
+build/
+dist/
+*.manifest
+# ملف البناء المصدر مطلوب في المستودع
+!task_manager.spec
+
+# مخرجات مثبّت Inno Setup (الملف المصدر installer.iss متتبَّع)
+installer/
+
+# بيانات التطبيق المحلية (إن وُجدت داخل المشروع)
+*.db
+*.db-wal
+*.db-shm
+logs/
+*.log
+
+# محرّر / نظام
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

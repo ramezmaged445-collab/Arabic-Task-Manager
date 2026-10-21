@@ -1,0 +1,16 @@
+# مكتبات مدير المهام العربي — تبعيات وقت التشغيل فقط
+# Arabic Task Manager — runtime dependencies only
+#
+# ملاحظة: أداة التغليف PyInstaller ليست تبعية للتشغيل، وهي موثّقة في README
+# ضمن قسم بناء ملف EXE. كل ما عداهما من المكتبات مستوردة من مكتبة Python
+# القياسية (sqlite3, threading, winsound, ctypes, ...).
+#
+# Note: PyInstaller is a build-only tool (see README, "Building an EXE"),
+# not a runtime dependency. Everything else comes from the Python standard library.
+
+# الواجهة الرسومية (إلزامية) / GUI toolkit (required)
+wxPython>=4.2.0
+
+# واجهات Windows: الكلام عبر SAPI، اختصار بدء التشغيل، منع النسخ المتعددة
+# Windows APIs: SAPI speech, startup shortcut, single-instance guard
+pywin32>=306
